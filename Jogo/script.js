@@ -47,7 +47,7 @@ botaoPassaVez.addEventListener("click", function () {
 });
 //ganhar jogo
 function vencer() {
-    if(pontuacao[jogadorAtual] >= 10){
+    if(pontuacao[jogadorAtual] >= 100){
     jogador.textContent = "Jogador" + (jogadorAtual + 1) + "Vence!!";
     pontuacao = [0, 0];
     pontuacoesRodadas[jogadorAtual].textContent = 0;
