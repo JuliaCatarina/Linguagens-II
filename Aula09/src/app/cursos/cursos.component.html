@@ -1,0 +1,87 @@
+<body>
+    <div class="row">
+  <div class="col-2 border">
+  <div class="card" style="width: 16rem;">
+    <img class="card-img-top" src="assets/alimentos.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Engenharia de Alimentos</h5>
+      <a href="https://maua.br/graduacao/engenharia-alimentos" class="btn btn-primary">Visite a Página</a>
+    </div>
+  </div>
+  </div>
+  <div class="col-2 border">
+    <div class="card" style="width: 16rem;">
+      <img class="card-img-top" src="assets/civil.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Engenharia Civil</h5>
+        <a href="https://maua.br/graduacao/engenharia-civil" class="btn btn-primary">Visite a Página</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-2 border">
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="assets/controle.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Engenharia de Controle e Automação</h5>
+          <a href="https://maua.br/graduacao/engenharia-controle-automacao" class="btn btn-primary">Visite a Página</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-2 border">
+        <div class="card" style="width: 16rem;">
+          <img class="card-img-top" src="assets/eletrica.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Engenharia Elétrica</h5>
+            <a href="https://maua.br/graduacao/engenharia-eletrica" class="btn btn-primary">Visite a Página</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-2 border">
+          <div class="card" style="width: 16rem;">
+            <img class="card-img-top" src="assets/eletronica.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Engenharia Eletônica</h5>
+              <a href="https://maua.br/graduacao/engenharia-eletronica" class="btn btn-primary">Visite a Página</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-2 border">
+            <div class="card" style="width: 16rem;">
+              <img class="card-img-top" src="assets/producao.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Engenharia de Produção</h5>
+                <a href="https://maua.br/graduacao/engenharia-producao" class="btn btn-primary">Visite a Página</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2 border">
+              <div class="card" style="width: 16rem;">
+                <img class="card-img-top" src="assets/quimica.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Engenharia Química</h5>
+                  <a href="https://maua.br/graduacao/engenharia-quimica" class="btn btn-primary">Visite a Página</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-2 border">
+                <div class="card" style="width: 16rem;">
+                  <img class="card-img-top" src="assets/adm.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Administrção</h5>
+                    <a href="https://maua.br/graduacao/administracao" class="btn btn-primary">Visite a Página</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-2 border">
+                  <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="assets/design.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Design</h5>
+                      <a href="https://maua.br/graduacao/design" class="btn btn-primary">Visite a Página</a>
+                    </div>
+                  </div>
+                  </div>
+                  <app-addcurso (cadastroCurso)="receberCurso($event)"></app-addcurso>
+                  <app-cursocard *ngFor="let curso of novosCursos" [curso]="curso"></app-cursocard>
+
+                  
