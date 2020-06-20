@@ -1,0 +1,9 @@
+<div class="col-6 border">
+    <div class="card" style="width: 16rem;">
+        <label for="curso">Curso</label>
+        <input type="text" class="form-control" id="nomeInput" #curso>
+        <label for="descricao">Descritivo</label>
+        <input type="text" class="form-control" id="nomeInput" #descritivo>
+        </div>
+        <button class="btn btn-primary btn-block" type="button"(click)="cadastro(curso.value,descritivo.value)" >Cadastrar</button>
+    </div>

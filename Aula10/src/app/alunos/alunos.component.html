@@ -1,0 +1,63 @@
+<div class="container">
+    <form #alunoform = "ngForm"
+    (ngSubmit)="salvaForm(alunoform.form.value)"
+    >
+    <div class="row">
+    <div class="form-group col-12">
+    <label for="nomeInput">Nome:</label>
+    <input type="text" placeholder="Digite seu Nome" class="form-control p-4"
+    ngModel name="nome"
+    >
+    </div>
+    </div>
+    <div class="row">
+    <div class="form-group col-md-4">
+    <label for="foneInput">Idade:</label>
+    <input type="text" placeholder="Digite sua Idade" class="form-control p-4"
+    ngModel name="idade"
+    >
+    </div>
+    <div class="form-group col-md-4">
+    <label for="emailInput">Email:</label>
+    <input type="text" placeholder="Digite seu Email" class="form-control p-4"
+    ngModel name="email"
+    >
+    </div>
+    <div class="form-group col-md-4">
+    <label for="profissaoInput">Curso</label>
+    <select name="" id="profissaoInput" class="form-control"
+    ngModel name="curso"
+    >
+    <option value="">Selecione</option>
+    <option>Engenharia De Computação</option>
+    <option>Engenharia de Controle e Automação</option>
+    <option>Engenharia Elétrica</option>
+    <option>Engenharia Eletrônica</option>
+    <option>Engenharia Civil</option>
+    <option>Engenharia Química</option>
+    <option>Engenharia Alimentos</option>
+    <option>Engenharia Mecânica</option>
+    <option>Engenharia de Produção</option>
+    <option>Administração</option>
+    <option>Design</option>
+    </select>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <button [ngStyle]="{
+        'color': (status ? 'blue' : 'white')
+    }"
+     type="submit" class="btn btn-primary" (mouseenter)="mudarBotao()"(mouseleave)="mudarBotao()"
+     [ngClass]="{
+        'btn-secondary':status,
+        'btn-primary':!status
+
+     }"
+     
+     >Enviar</button>
+    </div>
+    </div>
+    </form>
+   </div>
+   <app-alunocard *ngFor="let aluno of alunos" [aluno]="aluno"></app-alunocard>
